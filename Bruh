@@ -71,3 +71,54 @@ local args = {
 -- Invoke the server function to spawn the unit
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
 ]])
+
+AddContent("TextButton", "Spawn Jade Priest", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Jade Priest",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
+
+AddContent("TextButton", "Spawn High Roller", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"High Roller",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
+
+AddContent("TextButton", "Spawn Minigunner", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Minigunner",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
