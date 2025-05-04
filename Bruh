@@ -37,3 +37,71 @@ local args = {
 -- Invoke the server function to spawn the unit
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
 ]])
+
+AddContent("TextButton", "Spawn Vampire", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Vampire",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
+
+AddContent("TextButton", "Spawn J Vampire", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Jade Vampire",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
+
+AddContent("TextButton", "Spawn Vampire", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Vampire",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
+
+AddContent("TextButton", "Spawn Arsonist", [[
+local player = game.Players.LocalPlayer  -- Assuming you are spawning behind the local player
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+-- Calculate the position behind the player
+local spawnPosition = humanoidRootPart.Position - (humanoidRootPart.CFrame.LookVector * 1)  -- Adjust the multiplier (5) as needed
+ 
+-- Define the arguments for spawning the unit
+local args = {
+	"Arsonist",
+	CFrame.new(spawnPosition)
+}
+-- Invoke the server function to spawn the unit
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("PlaceTower"):InvokeServer(unpack(args))
+]])
